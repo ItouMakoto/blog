@@ -7,7 +7,15 @@
       <label for="blog-content">博客内容</label>
       <textarea v-model="blog.content" id="blog-content"></textarea>
       <div id="check-class">
-        <label for="">v</label>
+        <input type="checkbox" v-model="blog.blogClass" value="Vue.js">
+        <label for="">Vue.js</label>
+        <input type="checkbox" v-model="blog.blogClass" value="node.js">
+        <label for="">node.js</label>
+        <input type="checkbox" v-model="blog.blogClass" value="React.js">
+        <label for="">React.js</label>
+        <input type="checkbox" v-model="blog.blogClass" value="typescript.js">
+        <label for="">typescript.js</label>
+
       </div>
     </form>
     <hr>
@@ -28,6 +36,7 @@ export default {
       blog:{
         title: '',
         content:'',
+        blogClass:[]
       }
     }
   }
