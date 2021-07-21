@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="add-blog">
     <h2>添加博客</h2>
     <form action="" v-if="showEditor">
       <label for="blog-title">博客标签</label>
@@ -77,5 +77,51 @@ export default {
 </script>
 
 <style scoped>
+#add-blog *{
+  box-sizing: border-box;
+}
+#add-blog{
+  margin: 20px auto;
+  max-width:600px;
+  pading: 20px;
+}
+label {
+  display:block;
+  margin:20px 0 10px;
+}
+input[type="text"],textarea,select{
+  display:block;
+  width:100%;
+  padding:8px;
+}
+textarea{
+  height:200px
+}
+#check-class label {
+  display:inline-block;
+  margin:0 10px 0 0
+}
+#check-class input{
+  margin-right: 5px;
+ }
+button{
+  display:block;
+  margin: 20px 0;
+  background:crimson;
+  border:0;
+  color:white;
+  padding:10px;
+  border-radius:4px;
+  font-size:0.5em;
+  cursor:pointer;
+ }
+#preview{
+  margin:0 20px;
+  padding:0 10px;
+  border:1px dotted #ccc
 
+}
+#preview h3{
+  margin-top: 10px;
+}
 </style>
